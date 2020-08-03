@@ -1,6 +1,5 @@
 'use strict';
 const mongoose = require('mongoose');
-require('dotenv').config()
 
 
 let database_URL = 'mongodb://PipelineTest:Pipeline%40123@103.15.67.124:27017/PipelineDialerTest'
@@ -23,5 +22,8 @@ mongoose.connect(database_URL, { useNewUrlParser: true, useUnifiedTopology: true
   () => { console.log('Mongo Server Connected Successfully...!', database_URL); }, // eslint-disable-line
   (err) => { console.error('Failed to connect to MongoDB:', err.message); /** handle initial connection error */ }
 );
+
+
+
 //require('../models/feedback.schema');
 
