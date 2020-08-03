@@ -17,7 +17,7 @@ app.use((req, res, next) => {
 });
 app.use(cookieParser())
 app.get('/', function (req, res,next) {
-  // Cookies that have not been signed
+  // Cookies that have not been signed 1
   console.log('Cookies: ', req.cookies);
   next();
 })  
